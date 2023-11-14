@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    background-image: url(img/bg.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    margin: 5px 25px;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    padding: 0px 0;
+    backdrop-filter: blur(12px);
+    background-color: rgba(17, 17, 17, 0.199) !important;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    border-radius: 0px 0px 30px 30px;
+
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+}
+
+.nav__links li {
+    padding: 0px 20px;
+}
+
+.nav__links li a {
+    transition: color 0.3s ease 0s;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.nav__links li a:hover {
+    color: #f6a740;
+}
+
+/* Socials cards */
+
+.card-container {
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px; /* Adjust this width as needed */
+    top: 30%;
+    left: 30%;
+  }
+
+.card {
+    width: 250px;
+    /* Adjust this width as needed */
+    border: 1px solid #cccccc2d;
+    backdrop-filter: blur(12px);
+    background-color: rgba(146, 146, 146, 0.199) !important;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card-content {
+    margin-top: 10px;
+}
+
+.card-content h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #edf0f1;
+    font-family: 'Kalam', cursive;
+    align-items: center;
+    padding: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin: 0;
+    
+    
+}
+.ttvbtn{
+    --color: #5908b6;
+    background-color: #6743e9;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ttvbtn button:before {
+    content: "";
+    
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.ttvbtn button:hover {
+    color: #fff;
+}
+
+.ttvbtn button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+
+.ttvbtn button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+
+.ttvbtn button:active:before {
+    background: #3a0ca3;
+    transition:  0s;
+}
+.igbtn{
+    font-family: inherit;
+    display: inline-block;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    padding:10px;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+    border: 1px solid #cccccc2d;
+    background-color: rgb(212, 22, 70) !important;
+    transition: 1s ease-in-out;
+    outline: none;
+    border-radius: 6px;
+    
+}
+  .igbtn:hover {
+    transition: 1s ease-in-out;
+    background-color: rgb(24, 117, 230) !important;
+    border: 1px rgba(24, 82, 215, 0.199) !important;
+  }
+
+  .ytbtn{
+    font-family: inherit;
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 60px;
+    color: #fff;
+    display: flex;
+    padding:10px;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Kalam', cursive;
+    cursor: pointer;
+    border: 1px solid #ff0000;
+    background-color: #ff0000c3 !important;
+    transition: 1s ease-in-out;
+    outline: none;
+   
+    
+}
+  .ytbtn:hover {
+    transition: 1s ease-in-out;
+    background-color: rgb(24, 117, 230) !important;
+    border: 1px rgba(24, 82, 215, 0.199) !important;
+  }
+
+
+/* Mobile Nav */
+
+.menu {
+    display: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    background-color: #24252a;
+    overflow-x: hidden;
+    transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+
+    width: 100%;
+}
+
+.overlay__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f6a740;
+}
+
+.overlay .close {
+    padding-top: 70px;
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #edf0f1;
+    z-index: 99;
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nav__links,
+    .cta {
+        display: none;
+    }
+
+    .menu {
+        display: initial;
+    }
+}
+@media screen and (max-width: 768px) {
+    #home {
+        width: 100vw;
+        height: 150vh;
+    }
+    .card-container {
+        display: flex;
+        position: absolute;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 900px; /* Adjust this width as needed */
+        top: 20%;
+        left: 0%;
+      }
+  }
